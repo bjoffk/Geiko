@@ -142,6 +142,7 @@ module.exports = {
 
         //announce what is playing
         if (song.showDetails == true) {
+            console.log("hej")
             serverQueue.textChannel.send(' hoi~! Now playing ' + song.details.title + ' (' + timeFormatter(song.details.lengthSeconds) + ')' + '\n' + 'youtube.com/watch?v=' + song.details.videoId,
                 { files: [song.details.thumbnail.thumbnails[3].url] });
         } else {
